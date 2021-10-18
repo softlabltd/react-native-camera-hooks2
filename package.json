@@ -1,0 +1,31 @@
+{
+    "name": "react-native-camera-hooks2",
+    "version": "1.0.02",
+    "description": "React Mative Camera Hooks",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write \"src/**/*.ts\"",
+        "lint": "tslint -p tsconfig.json",
+        "prepare": "npm run build",
+        "preversion": "npm run lint",
+        "version": "npm run format && git add -A src",
+        "postversion": "git push && git push --tags"
+    },
+    "keywords": [
+        "react-native-camera-hooks"
+    ],
+    "author": "Pran Pegu",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/react": "^17.0.19",
+        "@types/react-native": "^0.64.13",
+        "prettier": "^2.3.2",
+        "react": "^17.0.2",
+        "react-native": "^0.65.1",
+        "react-native-camera": "^4.1.1",
+        "tslint": "^6.1.3",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^4.4.2"
+    }
+}
